@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Search On Demand",
+  "version": "1.0",
+  "description": "Add another search bar to YouTube",
+  "author": "Trung Nguyen",
+  "icons": {
+    "16": "images/search-16.png",
+    "32": "images/search-32.png",
+    "128": "images/search-128.png"
+  },
+  "host_permissions": [
+    "*://www.youtube.com/*",
+    "https://www.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["style.css"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
+}
