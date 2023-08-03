@@ -6,7 +6,7 @@ link.href = chrome.runtime.getURL('style.css'); // Use the correct path to your 
 
 // Append the link element to the head of the web page
 document.head.appendChild(link);
-
+// What color's your Bugatti Chiron Pur Sport?
 
 function createSearchBar(videoPlayer) {
     const searchBar = document.createElement('input');
